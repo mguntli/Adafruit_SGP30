@@ -1,8 +1,9 @@
 /*!
- * @file Adafruit_SGP30.h
+ * Sensirion SGP30 multi-pixel gas sensor for Particle platform
+ * (forked from Adafruit_SGP30)
  *
  * This is the documentation for Adafruit's SGP30 driver for the
- * Arduino platform.  It is designed specifically to work with the
+ * Arduino platform. It is designed specifically to work with the
  * Adafruit SGP30 breakout: http://www.adafruit.com/products/3709
  *
  * These sensors use I2C to communicate, 2 pins (SCL+SDA) are required
@@ -33,9 +34,9 @@
 /**************************************************************************/
 /*!  Class that stores state and functions for interacting with SGP30 Gas Sensor */
 /**************************************************************************/
-class Adafruit_SGP30 {
+class SensirionSGP30 {
  public:
-  Adafruit_SGP30();
+  SensirionSGP30();
   boolean begin(TwoWire *theWire = NULL);
   boolean IAQinit(void);
   boolean IAQmeasure(void);

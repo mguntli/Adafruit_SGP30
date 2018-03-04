@@ -1,7 +1,7 @@
 #include <Wire.h>
-#include "Adafruit_SGP30.h"
+#include "SensirionSGP30.h"
 
-Adafruit_SGP30 sgp;
+SensirionSGP30 sgp;
 
 void setup() {
   Serial.begin(9600);
